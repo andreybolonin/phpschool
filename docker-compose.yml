@@ -30,9 +30,9 @@ services:
       container_name: phpschool-composer
       ports:
         - "8000:8000"
-      command: php -S 0.0.0.0:8000
-#      volumes:
-#        - .:/var/www
+      command: php -S 0.0.0.0:8000 -t /var/www/phpschool
+      volumes:
+        - .:/var/www/phpschool
 #      tty: true
       links:
         - mysql
