@@ -1,7 +1,7 @@
 Installation (Ubuntu)
 =============
 
-1) sudo apt-get install git docker.io
+1) sudo apt-get install git docker.io docker-compose
 
 2) git clone git@github.com:andreybolonin/phpschool.git
 
