@@ -3,7 +3,7 @@ Installation (Ubuntu)
 
 1) sudo apt-get install git docker.io docker-compose
 
-2) git clone git@github.com:andreybolonin/phpschool.git
+2) git clone https://github.com/andreybolonin/phpschool.git
 
 3) sudo docker-compose up
 
@@ -14,7 +14,7 @@ Installation (macOS)
 
 1) https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac
 
-2) git clone git@github.com:andreybolonin/phpschool.git
+2) git clone https://github.com/andreybolonin/phpschool.git
 
 3) sudo docker-compose up
 
@@ -25,7 +25,7 @@ Installation (Windows)
 
 1) https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows
 
-2) git clone git@github.com:andreybolonin/phpschool.git
+2) git clone https://github.com/andreybolonin/phpschool.git
 
 3) sudo docker-compose up
 
