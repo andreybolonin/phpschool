@@ -30,3 +30,10 @@ Installation (Windows)
 3) sudo docker-compose up
 
 4) http://127.0.0.1:8000
+
+
+sudo docker exec CONTAINER php /var/www/bin/console
+
+p.s. To see your CONTAINER execute 
+
+sudo docker ps

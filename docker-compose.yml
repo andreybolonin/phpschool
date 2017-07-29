@@ -7,7 +7,7 @@ services:
       working_dir: /application
       environment:
         - MYSQL_ROOT_PASSWORD=root
-        - MYSQL_DATABASE=symfony
+        - MYSQL_DATABASE=phpschool
         - MYSQL_USER=root
         - MYSQL_PASSWORD=root
 
@@ -18,11 +18,16 @@ services:
       environment:
         - POSTGRES_USER=root
         - POSTGRES_PASSWORD=root
-        - POSTGRES_DB=symfony
+        - POSTGRES_DB=phpschool
 
     clickhouse:
       image: yandex/clickhouse-server:latest
       container_name: phpschool-clickhouse
+      working_dir: /application
+
+    redis:
+      image: redis:alpine
+      container_name: phpschool-redis
       working_dir: /application
 
     ubuntu:
@@ -33,8 +38,9 @@ services:
       command: php -S 0.0.0.0:8000 -t /var/www/phpschool
       volumes:
         - .:/var/www/phpschool
-#      tty: true
+
       links:
         - mysql
         - postgres
         - clickhouse
+        - redis
