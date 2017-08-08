@@ -30,9 +30,9 @@ services:
       container_name: phpschool-redis
       working_dir: /application
 
-    ubuntu:
-      image: composer:latest
-      container_name: phpschool-composer
+    php:
+      image: akhmelik/php7.1
+      container_name: phpschool-php
       ports:
         - "8000:8000"
       command: php -S 0.0.0.0:8000 -t /var/www/phpschool
